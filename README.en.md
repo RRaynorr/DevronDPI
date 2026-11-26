@@ -61,7 +61,7 @@ With **Run at startup** on, Windows does not ask for administrator permission at
 
 ## Privacy
 
-- DevronDPI never stores, collects or shares any of your data on the developer side; there is no telemetry. Settings and logs (`devron.conf`, `devron.log`) stay only in `%AppData%\DevronDPI` on your own computer.
+- DevronDPI never stores, collects or shares any of your data on the developer side; there is no telemetry. Settings and logs (`devron.conf`, `devron.log`, `devron-engine.log`) stay only in `%AppData%\DevronDPI` on your own computer.
 - During connection tests, only a secure connection is attempted with the test sites; none of your data is sent and no content is downloaded. The sites see your IP address, as in any normal connection.
 - Only two things reach official servers, as the internet requires, and they are processed there:
   - **DNS queries** (unencrypted): checked and logged by the chosen DNS server (Yandex, OpenDNS, AdGuard or Quad9).

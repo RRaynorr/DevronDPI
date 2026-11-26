@@ -61,7 +61,7 @@ Paket yakalama yönetici izni gerektirir. Pencere normal yetkiyle açılır, yal
 
 ## Gizlilik
 
-- DevronDPI geliştirici tarafında hiçbir verinizi saklamaz, toplamaz veya paylaşmaz; telemetri yoktur. Ayarlar ve kayıtlar (`devron.conf`, `devron.log`) yalnızca `%AppData%\DevronDPI` klasöründe, kendi bilgisayarınızda tutulur.
+- DevronDPI geliştirici tarafında hiçbir verinizi saklamaz, toplamaz veya paylaşmaz; telemetri yoktur. Ayarlar ve kayıtlar (`devron.conf`, `devron.log`, `devron-engine.log`) yalnızca `%AppData%\DevronDPI` klasöründe, kendi bilgisayarınızda tutulur.
 - Bağlantı testlerinde test sitelerine yalnızca güvenli bağlantı kurulmaya çalışılır; veriniz gönderilmez, içerik indirilmez. Siteler, normal bir bağlantıda olduğu gibi IP adresinizi görür.
 - İnternetin çalışması gereği yalnızca iki işlem resmi sunucularla yapılır ve bu bilgiler orada işlenir:
   - **DNS sorguları** (şifresiz): seçilen DNS sunucusunda (Yandex, OpenDNS, AdGuard veya Quad9) kontrol edilir ve tutulur.
