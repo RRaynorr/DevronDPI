@@ -1,0 +1,57 @@
+name: Bağlantı sorunu / Connection problem
+description: Bir site açılmıyor veya bağlanamıyor / A site does not open or it cannot connect
+labels: ["connection"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bu bilgiler sorunu hızlı çözmemi sağlar. Kişisel bilgi (IP, kullanıcı adı) yazmayın.
+        These details help me fix it quickly. Please do not include personal information (IP, username).
+  - type: input
+    id: version
+    attributes:
+      label: Sürüm / Version
+      placeholder: "1.1"
+    validations:
+      required: true
+  - type: input
+    id: isp
+    attributes:
+      label: İnternet sağlayıcı ve bağlantı türü / ISP and connection type
+      placeholder: "Örn. TurkNet, fiber / e.g. ISP name, fiber or mobile"
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: Açılmayan site veya uygulama / Site or app that does not work
+      placeholder: "discord.com"
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Ne oluyor? / What happens?
+      options:
+        - Bağlanamıyorum / Cannot connect
+        - Bağlı diyor ama site açılmıyor / Says connected but the site does not open
+        - Bağlı diyor ama doğrulanmadı / Connected but not verified
+        - Bağlantı bir süre sonra kopuyor / Drops after a while
+        - Diğer / Other
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Tanılama özeti / Diagnostic summary
+      description: |
+        Uygulamada Kayıtlar (sağ üstteki simge) → "Kayıtları kopyala" deyip buraya yapıştırın.
+        In the app open Logs (top-right icon) → "Copy logs" and paste the result here.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Eklemek istedikleriniz / Anything else
+      description: Denediğiniz profiller, başka ağda (ör. mobil hotspot) durum nasıl? / Profiles you tried, does it work on another network (e.g. phone hotspot)?
