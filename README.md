@@ -1,6 +1,6 @@
 # DevronDPI
 
-**Windows için tek tıkla DPI aşma aracı.** Discord, Roblox ve internet servis sağlayıcınızın derin paket denetimiyle (DPI) engellediği sitelere VPN kullanmadan erişin.
+**Windows için tek tıkla DPI aşma aracı.** İnternet servis sağlayıcınızın derin paket denetimiyle (DPI) engellediği web sitelerine, uygulamalara, çevrim içi oyunlara ve sesli sohbet platformlarına VPN kullanmadan, hız ve gecikme (ping) kaybı olmadan erişin.
 
 🇬🇧 [English](README.en.md) &nbsp;|&nbsp; 🇹🇷 **Türkçe**
 

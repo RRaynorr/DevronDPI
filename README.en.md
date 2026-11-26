@@ -1,6 +1,6 @@
 # DevronDPI
 
-**One-click DPI bypass for Windows.** Reach Discord, Roblox and other sites your ISP blocks with deep packet inspection, no VPN needed.
+**One-click DPI bypass for Windows.** Reach websites, apps, online games and voice platforms restricted by your ISP's deep packet inspection (DPI) — no VPN, no speed or ping loss.
 
 🇹🇷 [Türkçe](README.md) &nbsp;|&nbsp; 🇬🇧 **English**
 
