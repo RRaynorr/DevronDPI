@@ -4,7 +4,7 @@
 
 🇹🇷 [Türkçe](README.md) &nbsp;|&nbsp; 🇬🇧 **English**
 
-[![Downloads](https://img.shields.io/github/downloads/RRaynorr/DevronDPI/total?label=downloads&color=E11D48)](../../releases)
+[![Downloads](https://img.shields.io/github/downloads/RRaynorr/DevronDPI/total?label=downloads&color=E11D48)](../../releases) [![VirusTotal v1.1](https://img.shields.io/badge/VirusTotal_v1.1-2%2F70_flagged-yellow)](https://www.virustotal.com/gui/file/0b0b28338036f644f8d818e4cc5cd58781d529ea987e90f95377f54f4fde8146)
 
 ![DevronDPI](screenshot-en.png)
 
