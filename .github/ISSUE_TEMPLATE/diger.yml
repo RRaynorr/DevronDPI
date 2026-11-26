@@ -1,0 +1,20 @@
+name: Öneri veya diğer / Suggestion or other
+description: Özellik önerisi, soru veya başka bir konu / Feature idea, question or anything else
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Kişisel bilgi (IP, kullanıcı adı) yazmayın. Bir site açılmıyorsa "Bağlantı sorunu" formunu kullanın.
+        Please do not include personal information (IP, username). If a site does not open, use the "Connection problem" form.
+  - type: input
+    id: version
+    attributes:
+      label: Sürüm / Version
+      placeholder: "1.1"
+  - type: textarea
+    id: message
+    attributes:
+      label: Mesajınız / Your message
+      description: Önerinizi, sorunuzu veya konuyu yazın / Describe your idea, question or topic
+    validations:
+      required: true
