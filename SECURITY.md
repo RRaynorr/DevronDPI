@@ -5,33 +5,33 @@
 ## Türkçe
 
 ### Desteklenen sürümler
-Güvenlik düzeltmeleri yalnızca [son sürüm](../../releases/latest) için yapılır. Lütfen önce güncel sürümü kullandığınızdan emin olun.
+Güvenlik düzeltmeleri yalnızca [son sürüm](../../releases/latest) için yayınlanır. Bildirim göndermeden önce güncel sürümü kullandığınızdan emin olun.
 
 ### Güvenlik açığı bildirme
-**Güvenlik açıklarını herkese açık Issues sayfasından bildirmeyin.** Bunun yerine:
+**Güvenlik açıklarını herkese açık Sorunlar (Issues) sayfasından bildirmeyin.** Bunun yerine:
 
 1. Bu deponun **Security** sekmesine gidin.
-2. **Report a vulnerability** düğmesiyle özel bir bildirim açın. Yalnızca siz ve geliştirici görür.
+2. **Report a vulnerability** düğmesiyle özel bildirim açın. Bildirimi yalnızca siz ve geliştirici görebilir.
 
-Bildirime şunları ekleyin:
+Bildirime şu bilgileri ekleyin:
 - Etkilenen DevronDPI ve Windows sürümü.
 - Sorunun ne olduğu ve nasıl yeniden üretileceği.
-- Olası etkisi (ör. yetki yükseltme, kötü amaçlı güncellemenin kabul edilmesi).
+- Olası etkisi (ör. yetki yükseltme, sahte bir güncellemenin kabul edilmesi).
 
-Bildirimi inceleyip uygun görürsem düzeltme yayınlanana kadar ayrıntıları gizli tutarım. Düzeltme çıktığında isterseniz adınız teşekkür olarak anılır.
+Bildirimi inceledikten sonra düzeltme yayınlanana kadar ayrıntıları gizli tutarım. Düzeltme yayınlandığında isterseniz adınız sürüm notlarında teşekkür olarak belirtilir.
 
 ### Kapsam
-Şunlar güvenlik sorunu sayılır:
-- Normal yetkili bir programın DevronDPI aracılığıyla yönetici yetkisi kazanması.
+Şu durumlar güvenlik sorunu kapsamındadır:
+- Normal kullanıcı yetkili bir programın DevronDPI aracılığıyla yönetici yetkisi kazanması.
 - Yönetici motor işleminin başka bir programdan komut kabul etmesi.
-- Güncelleme doğrulamasının (SHA-256, GitHub adresi) aşılabilmesi.
+- Güncelleme doğrulamasının (SHA-256 özeti, GitHub adres kontrolü) aşılabilmesi.
 - Ayar veya kayıt dosyaları üzerinden kod çalıştırılabilmesi ya da kullanıcı verilerinin sızması.
 
-Şunlar kapsam dışıdır:
-- Bir sitenin IP düzeyinde engellenmiş olması (DPI aracı bunu aşamaz).
-- Dijital imza olmadığı için Windows'un "Yayıncı bilinmiyor" / SmartScreen uyarısı.
-- Antivirüslerin WinDivert yüzünden verdiği yanlış alarmlar (README'de açıklanmıştır).
-- DPI aşımının belirli bir ağda çalışmaması (bu bir hata bildirimidir, [Issues](../../issues) sayfasına yazın).
+Şu durumlar kapsam dışıdır:
+- Bir sitenin doğrudan IP adresi düzeyinde engellenmiş olması (DPI aracı bunu aşamaz).
+- Dijital kod imzası bulunmadığı için Windows SmartScreen tarafından gösterilen "Yayıncı bilinmiyor" uyarısı.
+- Antivirüs yazılımlarının WinDivert sürücüsü nedeniyle verdiği yanlış alarmlar (`README.md` içinde açıklanmıştır).
+- DPI aşma yöntemlerinin belirli bir ağda çalışmaması (bu bir hata bildirimidir; [Sorunlar (Issues)](../../issues) sayfasından iletebilirsiniz).
 
 ---
 
