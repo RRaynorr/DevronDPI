@@ -8,12 +8,17 @@ Copyright (c) 2026 RRaynorr. All rights reserved.
 
 2. Restrictions. The source code is not published. You may not modify, sell,
    rent, sublicense, or reverse engineer the Software, nor remove its notices,
-   except where applicable law expressly allows it despite this restriction.
+   except where applicable law expressly allows it despite this restriction,
+   and except as described in section 3.
 
 3. Third-party components. The Software includes WinDivert (LGPLv3) and other
    components that are licensed under their own terms, listed in
    THIRD-PARTY-NOTICES.md. Nothing in this license restricts your rights under
-   those licenses.
+   those licenses. In particular, for WinDivert the restrictions of section 2
+   do not apply to the extent the LGPLv3 gives you the right to modify
+   WinDivert and to reverse engineer the Software, only as far as necessary
+   to debug such modifications. The texts of those licenses are available as
+   described in THIRD-PARTY-NOTICES.md.
 
 4. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
    EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR
