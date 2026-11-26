@@ -2,5 +2,5 @@
   "version": "1.1",
   "url": "https://github.com/RRaynorr/DevronDPI/releases/download/v1.1/DevronDPI.exe",
   "sha256": "0b0b28338036f644f8d818e4cc5cd58781d529ea987e90f95377f54f4fde8146",
-  "notes": "DevronDPI v1.1"
+  "notes": "Quad9 yedek DNS, ekran ölçekleme düzeltmeleri, daha sağlam hata kaydı | Quad9 fallback DNS, display scaling fixes, more robust error logging"
 }

@@ -78,6 +78,15 @@ With **Run at startup** on, Windows does not ask for administrator permission at
 - **Updates:** every time it starts the app checks GitHub for a new version and asks if there is one. **Yes** downloads and installs it automatically, **No** changes nothing. A downloaded file is only accepted if it comes from GitHub and its SHA-256 matches.
 - **Digital signature and antivirus:** the exe is not currently digitally signed, so Windows may show an "Unknown publisher" warning and SmartScreen may warn. Some antivirus programs may give a false alarm such as `RiskTool.WinDivert` because of the packet-capture driver (WinDivert); it is not malware. You can add `DevronDPI.exe` to the exceptions list. If in doubt, compare the file's SHA-256 hash with the value on the release page.
 
+## Reporting problems
+
+If you found a bug or have a suggestion, open a new entry on the [Issues](../../issues) page. Please include:
+- The DevronDPI version and your Windows version (both are on the first line of the Logs screen).
+- What you did and what happened; a screenshot if possible.
+- The logs copied with the **Copy logs** button on the **Logs** screen. The log files are in `%AppData%\DevronDPI` (`devron.log`, and `devron-engine.log` for engine errors).
+
+Logs may contain the names of sites used in connection tests; review them before sharing.
+
 ---
 
 ## License

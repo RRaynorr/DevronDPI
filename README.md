@@ -78,6 +78,15 @@ Paket yakalama yönetici izni gerektirir. Pencere normal yetkiyle açılır, yal
 - **Güncelleme:** Uygulama her açıldığında GitHub'da yeni sürüm arar ve varsa sorar. **Evet** derseniz otomatik indirilip yüklenir, **Hayır** derseniz hiçbir şey değişmez. İndirilen dosya yalnızca GitHub'dan geliyorsa ve SHA-256 özeti eşleşiyorsa kabul edilir.
 - **Dijital imza ve antivirüs:** Exe şu an dijital imzalı değildir; Windows "Yayıncı bilinmiyor" uyarısı ve SmartScreen uyarısı gösterebilir. Bazı antivirüsler, paket yakalama sürücüsü (WinDivert) yüzünden `RiskTool.WinDivert` gibi yanlış alarm verebilir; bu zararlı yazılım değildir. Gerekirse `DevronDPI.exe`'yi istisnalara ekleyin. Şüpheniz varsa dosyanın SHA-256 özetini sürüm sayfasındaki değerle karşılaştırın.
 
+## Sorun bildirme
+
+Bir hata bulduysanız veya önerinizi iletmek istiyorsanız [Issues](../../issues) sayfasından yeni bir kayıt açın. Yazarken şunları ekleyin:
+- DevronDPI sürümü ve Windows sürümü (Kayıtlar ekranının ilk satırında yazar).
+- Ne yaptığınız ve ne olduğu; mümkünse ekran görüntüsü.
+- **Kayıtlar** ekranındaki **Kayıtları kopyala** düğmesiyle kopyaladığınız kayıtlar. Kayıt dosyaları `%AppData%\DevronDPI` klasöründe (`devron.log`, motor hatası için `devron-engine.log`) bulunur.
+
+Kayıtlar, bağlantı testinde kullanılan site adlarını içerebilir; paylaşmadan önce gözden geçirin.
+
 ---
 
 ## Lisans
