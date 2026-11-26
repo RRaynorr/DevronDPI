@@ -114,7 +114,7 @@ Hayır. Bkz. [Gizlilik](#gizlilik).
 ## Sorun bildirme
 
 Bir hata bulduysanız veya önerinizi iletmek istiyorsanız [Issues](../../issues) sayfasından yeni bir kayıt açın. Yazarken şunları ekleyin:
-- DevronDPI sürümü ve Windows sürümü (Kayıtlar ekranının ilk satırında yazar).
+- DevronDPI sürümü ve Windows sürümü (**Kayıtları kopyala** ile kopyalanan metnin başında yazar).
 - Ne yaptığınız ve ne olduğu; mümkünse ekran görüntüsü.
 - **Kayıtlar** ekranındaki **Kayıtları kopyala** düğmesiyle kopyaladığınız kayıtlar. Kayıt dosyaları `%AppData%\DevronDPI` klasöründe (`devron.log`, motor hatası için `devron-engine.log`) bulunur.
 

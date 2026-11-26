@@ -49,7 +49,7 @@ Everything it needs is inside `DevronDPI.exe`. Settings live in `%AppData%\Devro
 - **Notifications**: a Windows notification appears if the connection drops or is re-established while the window is out of view.
 - **Top bar**: Logs, language, light/dark theme, run in background, minimize and close.
 - **Logs**: a line-by-line connection history. Filter by *All / Warnings / Errors*, show technical lines with **Details**, copy to the clipboard or save as `.txt`.
-- **Notification-area icon**: left click restores the window. Right click opens a menu with connect/disconnect, **run at startup**, **auto-connect at startup** (off by default), run in background, hotkey, diagnose connection, check for updates, and exit.
+- **Notification-area icon**: left click restores the window. Right click opens a menu with connect/disconnect, **run at startup**, **connect automatically on launch** (off by default), run in background, hotkey, diagnose connection, check for updates, and exit.
 - **What does "Connected" mean?** That the test sites that look blocked on this network could be reached. It does not guarantee every site will open.
 
 The **X** button closes the app entirely (and disconnects). To keep it running in the background, turn on **run in background** in the top bar; then X and — hide the window to the notification area next to the clock. Click the icon to bring it back; right-click it and choose **Exit** to close it fully.
@@ -57,7 +57,7 @@ The **X** button closes the app entirely (and disconnects). To keep it running i
 ### Administrator permission
 Packet capture needs administrator rights. The window opens with normal rights and only the packet engine runs as administrator, so screenshot tools and hotkeys keep working normally. When the window closes, the engine stops too.
 
-With **Run at startup** on, Windows does not ask for administrator permission at logon or when you press **CONNECT**; you approve it once, when you turn the option on (it may ask once more on the first connect after you update the app to a new version). This option puts a copy of the exe in `C:\Program Files\DevronDPI\`, a folder only administrators can change, and removes it when turned off. The app does not auto-connect at startup by default; turn on **Auto-connect at startup** if you want that. If you move `DevronDPI.exe` to another folder afterwards, turn this option off and back on once.
+With **Run at startup** on, Windows does not ask for administrator permission at logon or when you press **CONNECT**; you approve it once, when you turn the option on (it may ask once more on the first connect after you update the app to a new version). This option puts a copy of the exe in `C:\Program Files\DevronDPI\`, a folder only administrators can change, and removes it when turned off. The app does not auto-connect at startup by default; turn on **Connect automatically on launch** if you want that. If you move `DevronDPI.exe` to another folder afterwards, turn this option off and back on once.
 
 ---
 
@@ -114,7 +114,7 @@ No. See [Privacy](#privacy).
 ## Reporting problems
 
 If you found a bug or have a suggestion, open a new entry on the [Issues](../../issues) page. Please include:
-- The DevronDPI version and your Windows version (both are on the first line of the Logs screen).
+- The DevronDPI version and your Windows version (both are at the top of the text copied with **Copy logs**).
 - What you did and what happened; a screenshot if possible.
 - The logs copied with the **Copy logs** button on the **Logs** screen. The log files are in `%AppData%\DevronDPI` (`devron.log`, and `devron-engine.log` for engine errors).
 
