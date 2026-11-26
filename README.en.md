@@ -4,6 +4,8 @@
 
 🇹🇷 [Türkçe](README.md) &nbsp;|&nbsp; 🇬🇧 **English**
 
+[![Downloads](https://img.shields.io/github/downloads/RRaynorr/DevronDPI/total?label=downloads&color=E11D48)](../../releases)
+
 ![DevronDPI](screenshot-en.png)
 
 **[⬇ Download DevronDPI.exe](../../releases/latest)** · Double-click it, press **CONNECT**. No installation.
