@@ -4,11 +4,11 @@
 
 🇬🇧 [English](README.en.md) &nbsp;|&nbsp; 🇹🇷 **Türkçe**
 
-[![İndirme](https://img.shields.io/github/downloads/RRaynorr/DevronDPI/total?label=indirme&color=E11D48)](../../releases) [![VirusTotal v1.1](https://img.shields.io/badge/VirusTotal_v1.1-2%2F70_uyar%C4%B1-yellow)](https://www.virustotal.com/gui/file/0b0b28338036f644f8d818e4cc5cd58781d529ea987e90f95377f54f4fde8146)
+[![Downloads](https://img.shields.io/github/downloads/RRaynorr/DevronDPI/total?label=downloads&color=E11D48)](../../releases) [![VirusTotal v1.1](https://img.shields.io/badge/VirusTotal_v1.1-2%2F70_flagged-yellow)](https://www.virustotal.com/gui/file/0b0b28338036f644f8d818e4cc5cd58781d529ea987e90f95377f54f4fde8146)
 
 ![DevronDPI](screenshot.png)
 
-**[⬇ DevronDPI.exe'yi indir / Download DevronDPI.exe](../../releases/latest)** · Çift tıklayın, **BAĞLAN**'a basın. Kurulum gerekmez. / Double-click it, press **CONNECT**. No installation.
+**[⬇ DevronDPI.exe'yi indir](../../releases/latest)** · Çift tıklayın, **BAĞLAN**'a basın. Kurulum gerekmez.
 
 Windows (x64) için DPI (derin paket denetimi) aşım aracı. Discord, Roblox ve internet servis sağlayıcınızın paket denetimiyle kısıtladığı diğer sitelere bağlanmanızı sağlar. Tarayıcılar, Discord ve oyunlar dahil tüm uygulamalarda sistem genelinde çalışır.
 
@@ -30,8 +30,6 @@ Windows (x64) için DPI (derin paket denetimi) aşım aracı. Discord, Roblox ve
 - 🌍 **Rahat kullanım:** başlangıçta çalıştırma, isteğe bağlı otomatik bağlanma, arka planda çalışma, kısayol tuşu, Türkçe ve İngilizce arayüz, açık/koyu tema.
 
 > **Dürüst not:** DPI aşımı, paket denetimine (DPI) ve DNS'e dayalı engelleri aşar. Bir site **IP adresi düzeyinde** engelliyse hiçbir DPI aracı onu açamaz; uygulama bunu fark edip söyler, bunun için gerçek bir VPN gerekir. Ayrıca DNS yönlendirmesi açıkken DNS sorguları (girdiğiniz sitelerin alan adları) şifrelenmeden Yandex, OpenDNS, AdGuard veya Quad9 DNS sunucusuna gider (bkz. [Gizlilik](#gizlilik)).
->
-> **Honest note:** DPI bypass defeats packet-inspection (DPI) and DNS-based blocking. A site blocked at the **IP address** level cannot be opened by any DPI tool; the app notices and tells you, and a real VPN is needed. Also, with DNS redirection on, DNS queries (the names of the sites you visit) are sent unencrypted to Yandex, OpenDNS, AdGuard or Quad9 DNS (see [Privacy](README.en.md#privacy)).
 
 ---
 
