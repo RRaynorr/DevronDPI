@@ -4,13 +4,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Kişisel bilgi (IP, kullanıcı adı) yazmayın. Bir site açılmıyorsa "Bağlantı sorunu" formunu kullanın.
+        Kişisel bilgi (IP adresi, kullanıcı adı vb.) yazmayın. Bir site açılmıyorsa "Bağlantı sorunu" formunu kullanın.
         Please do not include personal information (IP, username). If a site does not open, use the "Connection problem" form.
   - type: input
     id: version
     attributes:
       label: Sürüm / Version
-      placeholder: "1.1"
+      placeholder: "1.2"
   - type: textarea
     id: message
     attributes:

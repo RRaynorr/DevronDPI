@@ -5,20 +5,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Bu bilgiler sorunu hızlı çözmemi sağlar. Kişisel bilgi (IP, kullanıcı adı) yazmayın.
+        Bu bilgiler sorunu hızlıca çözmemi sağlar. Kişisel bilgi (IP adresi, kullanıcı adı vb.) yazmayın.
         These details help me fix it quickly. Please do not include personal information (IP, username).
   - type: input
     id: version
     attributes:
       label: Sürüm / Version
-      placeholder: "1.1"
+      placeholder: "1.2"
     validations:
       required: true
   - type: input
     id: isp
     attributes:
-      label: İnternet sağlayıcı ve bağlantı türü / ISP and connection type
-      placeholder: "Örn. TurkNet, fiber / e.g. ISP name, fiber or mobile"
+      label: İnternet servis sağlayıcısı ve bağlantı türü / ISP and connection type
+      placeholder: "ör. TurkNet, fiber / e.g. ISP name, fiber or mobile"
     validations:
       required: true
   - type: input
@@ -34,8 +34,8 @@ body:
       label: Ne oluyor? / What happens?
       options:
         - Bağlanamıyorum / Cannot connect
-        - Bağlı diyor ama site açılmıyor / Says connected but the site does not open
-        - Bağlı diyor ama doğrulanmadı / Connected but not verified
+        - Bağlı görünüyor ama site açılmıyor / Says connected but the site does not open
+        - Bağlı görünüyor ama doğrulanmadı / Connected but not verified
         - Bağlantı bir süre sonra kopuyor / Drops after a while
         - Diğer / Other
     validations:
@@ -45,7 +45,7 @@ body:
     attributes:
       label: Tanılama özeti / Diagnostic summary
       description: |
-        Uygulamada Kayıtlar (sağ üstteki simge) → "Kayıtları kopyala" deyip buraya yapıştırın.
+        Uygulamada Kayıtlar (sağ üstteki simge) → "Kayıtları kopyala" düğmesine basıp çıktıyı buraya yapıştırın.
         In the app open Logs (top-right icon) → "Copy logs" and paste the result here.
       render: text
     validations:
@@ -54,4 +54,4 @@ body:
     id: extra
     attributes:
       label: Eklemek istedikleriniz / Anything else
-      description: Denediğiniz profiller, başka ağda (ör. mobil hotspot) durum nasıl? / Profiles you tried, does it work on another network (e.g. phone hotspot)?
+      description: Başka bir ağda (ör. telefonun mobil erişim noktasında) durum nasıl? / Does it work on another network (e.g. phone hotspot)?
