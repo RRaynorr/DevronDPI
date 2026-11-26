@@ -1,6 +1,6 @@
 {
-  "version": "1.1",
-  "url": "https://github.com/RRaynorr/DevronDPI/releases/download/v1.1/DevronDPI.exe",
-  "sha256": "0b0b28338036f644f8d818e4cc5cd58781d529ea987e90f95377f54f4fde8146",
-  "notes": "Quad9 yedek DNS, ekran ölçekleme düzeltmeleri, daha sağlam hata kaydı | Quad9 fallback DNS, display scaling fixes, more robust error logging"
+  "version": "1.2",
+  "url": "https://github.com/RRaynorr/DevronDPI/releases/download/v1.2/DevronDPI.exe",
+  "sha256": "ec8b5d366bf8881b932929e199cfe62814b2e3241411237a4d0e2b83a0305614",
+  "notes": "Anycast erişim köprüsü (1.1.1.1 / DoH), özel adres tanılama, güçlendirilmiş motor ve uyku/kablosuz ağ geçiş düzeltmeleri | Anycast access bridge (1.1.1.1 / DoH), custom address diagnostics, stronger engine and sleep/Wi-Fi recovery fixes"
 }
