@@ -77,8 +77,39 @@ Paket yakalama yönetici izni gerektirir. Pencere normal yetkiyle açılır, yal
 - **DNS yönlendirme:** Sorgular şifrelenmeden seçilen DNS sunucusuna gider. Yönlendirme yerel ağ (router) DNS'ini de kapsar; şirket veya okul ağlarında iç adlar çözülmeyebilir. Şifreli DNS (DoH/DoT) etkilenmez.
 - **QUIC engeli:** Tarayıcılar ve Discord'un TCP kullanması için giden tüm UDP 443 trafiği engellenir. UDP 443 kullanan bazı VPN'ler etkilenebilir.
 - **Analiz doğrulanamazsa:** Bağlantıyı yeşil "Bağlı" göstermez; nedenini söyler ve Kayıtlar'a yazar.
-- **Güncelleme:** Uygulama her açıldığında GitHub'da yeni sürüm arar ve varsa sorar. **Evet** derseniz otomatik indirilip yüklenir, **Hayır** derseniz hiçbir şey değişmez. İndirilen dosya yalnızca GitHub'dan geliyorsa ve SHA-256 özeti eşleşiyorsa kabul edilir.
+- **Güncelleme:** Uygulama her açıldığında GitHub'da yeni sürüm arar ve varsa sorar. **Evet** derseniz otomatik indirilip yüklenir, **Hayır** derseniz hiçbir şey değişmez. İndirilen dosya yalnızca GitHub'dan geliyorsa ve SHA-256 özeti eşleşiyorsa kabul edilir. Değişiklikler için [CHANGELOG.md](CHANGELOG.md).
 - **Dijital imza ve antivirüs:** Exe şu an dijital imzalı değildir; Windows "Yayıncı bilinmiyor" uyarısı ve SmartScreen uyarısı gösterebilir. Bazı antivirüsler, paket yakalama sürücüsü (WinDivert) yüzünden `RiskTool.WinDivert` gibi yanlış alarm verebilir; bu zararlı yazılım değildir. Gerekirse `DevronDPI.exe`'yi istisnalara ekleyin. Şüpheniz varsa dosyanın SHA-256 özetini sürüm sayfasındaki değerle karşılaştırın.
+
+## Sık sorulan sorular
+
+**Neden yönetici izni (UAC) istiyor?**
+Ağ paketlerini yakalamak Windows'ta yönetici izni gerektirir. Yalnızca paket motoru yönetici olarak çalışır, pencere normal yetkiyle açılır (bkz. [Yönetici izni](#yönetici-izni)).
+
+**Windows "Yayıncı bilinmiyor" veya SmartScreen uyarısı veriyor. Güvenli mi?**
+Exe şu an dijital imzalı değil, bu yüzden Windows böyle uyarır. İmzasız olması zararlı olduğu anlamına gelmez, ama dosyayı yalnızca bu depodaki [sürümlerden](../../releases) indirin ve SHA-256 özetini sürüm sayfasındaki değerle karşılaştırın.
+
+**Antivirüsüm uyardı ya da dosyayı sildi.**
+Bazı antivirüsler, paket yakalama sürücüsü (WinDivert) yüzünden `RiskTool` gibi yanlış alarm verebilir. Bu zararlı yazılım değildir. `DevronDPI.exe`'yi antivirüsün istisnalarına ekleyebilirsiniz.
+
+**"Bağlı" yazıyor ama bir site açılmıyor.**
+"Bağlı", bu ağda engelli görünen test sitelerine erişilebildiği anlamına gelir; her sitenin açılacağını garanti etmez. Site IP adresi düzeyinde engelliyse hiçbir DPI aracı onu açamaz. Bildirim alanı simgesinin menüsünden **Bağlantıyı tanıla**'yı çalıştırın; sorunun nedenini söyler. **Kayıtlar** ekranına da bakın.
+
+**Discord sesli sohbette "RTC Bağlanıyor"da takılıyor.**
+DevronDPI bu durumda yardımcı olabilir, ama ses sunucusunun IP adresi doğrudan engelliyse aşamaz. Bağlı olduğundan ve Kayıtlar'da hata görünmediğinden emin olun.
+
+**Tarayıcım şifreli DNS (DoH) kullanıyor, bu bir sorun mu?**
+Şifreli DNS (DoH/DoT) DNS yönlendirmesinden etkilenmez; tarayıcınız kendi şifreli DNS'ini kullanıyorsa o kullanılmaya devam eder.
+
+**Wi-Fi değiştirince veya bilgisayar uykudan uyanınca ne olur?**
+Uygulama bağlantıyı yeniden doğrular ve koparsa bildirim gösterir.
+
+**Uygulamayı nasıl kaldırırım?**
+Önce bildirim alanı menüsünden **Başlangıçta çalıştır**'ı kapatın (görevleri ve `Program Files`'taki kopyayı siler), sonra `DevronDPI.exe`'yi silin. İsterseniz `%AppData%\DevronDPI` (ayarlar ve kayıtlar) ve `C:\ProgramData\DevronDPI` (çıkarılan sürücü dosyaları) klasörlerini de silebilirsiniz.
+
+**Verilerim toplanıyor mu?**
+Hayır. Bkz. [Gizlilik](#gizlilik).
+
+---
 
 ## Sorun bildirme
 

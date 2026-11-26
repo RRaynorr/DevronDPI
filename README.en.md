@@ -77,8 +77,39 @@ With **Run at startup** on, Windows does not ask for administrator permission at
 - **DNS redirection:** queries go unencrypted to the chosen DNS server. It also covers your router's own DNS, so internal names on company or school networks may stop resolving. Encrypted DNS (DoH/DoT) is unaffected.
 - **QUIC block:** all outgoing UDP 443 traffic is blocked so browsers and Discord use TCP. Some VPNs that use UDP 443 may be affected.
 - **If the analysis can't verify a method:** it does not show a green "Connected"; it reports why and logs it.
-- **Updates:** every time it starts the app checks GitHub for a new version and asks if there is one. **Yes** downloads and installs it automatically, **No** changes nothing. A downloaded file is only accepted if it comes from GitHub and its SHA-256 matches.
+- **Updates:** every time it starts the app checks GitHub for a new version and asks if there is one. **Yes** downloads and installs it automatically, **No** changes nothing. A downloaded file is only accepted if it comes from GitHub and its SHA-256 matches. See [CHANGELOG.md](CHANGELOG.md) for what changed.
 - **Digital signature and antivirus:** the exe is not currently digitally signed, so Windows may show an "Unknown publisher" warning and SmartScreen may warn. Some antivirus programs may give a false alarm such as `RiskTool.WinDivert` because of the packet-capture driver (WinDivert); it is not malware. You can add `DevronDPI.exe` to the exceptions list. If in doubt, compare the file's SHA-256 hash with the value on the release page.
+
+## FAQ
+
+**Why does it ask for administrator permission (UAC)?**
+Capturing network packets needs administrator rights on Windows. Only the packet engine runs as administrator; the window opens with normal rights (see [Administrator permission](#administrator-permission)).
+
+**Windows shows an "Unknown publisher" or SmartScreen warning. Is it safe?**
+The exe is not digitally signed at the moment, which is why Windows warns. Being unsigned does not mean it is harmful, but download it only from the [releases](../../releases) of this repository and compare its SHA-256 with the value on the release page.
+
+**My antivirus warned me or deleted the file.**
+Some antivirus programs may give a false alarm such as `RiskTool` because of the packet-capture driver (WinDivert). It is not malware. You can add `DevronDPI.exe` to the antivirus exceptions.
+
+**It says "Connected" but a site does not open.**
+"Connected" means the test sites that look blocked on this network could be reached; it does not guarantee every site will open. If a site is blocked at the IP address level, no DPI tool can open it. Run **Diagnose connection** from the notification-area icon menu; it tells you the cause. Also look at the **Logs** screen.
+
+**Discord voice is stuck on "RTC Connecting".**
+DevronDPI can help in this case, but it cannot if the voice server's IP address itself is blocked. Make sure it is connected and that the Logs show no errors.
+
+**My browser uses encrypted DNS (DoH). Is that a problem?**
+Encrypted DNS (DoH/DoT) is not affected by the DNS redirection; if your browser uses its own encrypted DNS, it keeps using it.
+
+**What happens when I change Wi-Fi or the PC wakes from sleep?**
+The app re-checks the connection and shows a notification if it drops.
+
+**How do I uninstall it?**
+First turn off **Run at startup** in the notification-area menu (it removes the tasks and the copy in `Program Files`), then delete `DevronDPI.exe`. If you wish, also delete `%AppData%\DevronDPI` (settings and logs) and `C:\ProgramData\DevronDPI` (the extracted driver files).
+
+**Is my data collected?**
+No. See [Privacy](#privacy).
+
+---
 
 ## Reporting problems
 
