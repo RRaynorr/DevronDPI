@@ -1,6 +1,6 @@
 {
-  "version": "1.2",
-  "url": "https://github.com/RRaynorr/DevronDPI/releases/download/v1.2/DevronDPI.exe",
-  "sha256": "ec8b5d366bf8881b932929e199cfe62814b2e3241411237a4d0e2b83a0305614",
-  "notes": "Anycast erişim köprüsü (1.1.1.1 / DoH), özel adres tanılama, güçlendirilmiş motor ve uyku/kablosuz ağ geçiş düzeltmeleri | Anycast access bridge (1.1.1.1 / DoH), custom address diagnostics, stronger engine and sleep/Wi-Fi recovery fixes"
+  "version": "1.3",
+  "url": "https://github.com/RRaynorr/DevronDPI/releases/download/v1.3/DevronDPI.exe",
+  "sha256": "22a83858f4a1fcaa1af30e55f3fac2c775c0b1d24d7e880dd62afd7c677313b8",
+  "notes": "4-stage Connection X-Ray, 0 ms tracker & ad shield, per-site rules, signed rules.json updates and fluid UI transitions | 4 aşamalı Engel Röntgeni, 0 ms izleyici ve reklam koruması, site bazlı kurallar, imzalı rules.json güncellemeleri ve akıcı arayüz geçişleri"
 }
