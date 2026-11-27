@@ -1,57 +1,57 @@
-name: Bağlantı sorunu / Connection problem
-description: Bir site açılmıyor veya bağlanamıyor / A site does not open or it cannot connect
+name: Connection problem / Bağlantı sorunu
+description: A site does not open or it cannot connect / Bir site açılmıyor veya bağlanamıyor
 labels: ["connection"]
 body:
   - type: markdown
     attributes:
       value: |
-        Bu bilgiler sorunu hızlıca çözmemi sağlar. Kişisel bilgi (IP adresi, kullanıcı adı vb.) yazmayın.
         These details help me fix it quickly. Please do not include personal information (IP, username).
+        Bu bilgiler sorunu hızlıca çözmemi sağlar. Kişisel bilgi (IP adresi, kullanıcı adı vb.) yazmayın.
   - type: input
     id: version
     attributes:
-      label: Sürüm / Version
-      placeholder: "1.2"
+      label: Version / Sürüm
+      placeholder: "1.3"
     validations:
       required: true
   - type: input
     id: isp
     attributes:
-      label: İnternet servis sağlayıcısı ve bağlantı türü / ISP and connection type
-      placeholder: "ör. TurkNet, fiber / e.g. ISP name, fiber or mobile"
+      label: ISP and connection type / İnternet servis sağlayıcısı ve bağlantı türü
+      placeholder: "e.g. ISP name, fiber or mobile / ör. İSS adı, fiber veya mobil"
     validations:
       required: true
   - type: input
     id: site
     attributes:
-      label: Açılmayan site veya uygulama / Site or app that does not work
+      label: Site or app that does not work / Açılmayan site veya uygulama
       placeholder: "discord.com"
     validations:
       required: true
   - type: dropdown
     id: result
     attributes:
-      label: Ne oluyor? / What happens?
+      label: What happens? / Ne oluyor?
       options:
-        - Bağlanamıyorum / Cannot connect
-        - Bağlı görünüyor ama site açılmıyor / Says connected but the site does not open
-        - Bağlı görünüyor ama doğrulanmadı / Connected but not verified
-        - Bağlantı bir süre sonra kopuyor / Drops after a while
-        - Diğer / Other
+        - Cannot connect / Bağlanamıyorum
+        - Says connected but the site does not open / Bağlı görünüyor ama site açılmıyor
+        - Connected but not verified / Bağlı görünüyor ama doğrulanmadı
+        - Drops after a while / Bağlantı bir süre sonra kopuyor
+        - Other / Diğer
     validations:
       required: true
   - type: textarea
     id: report
     attributes:
-      label: Tanılama özeti / Diagnostic summary
+      label: Diagnostic summary / Tanılama özeti
       description: |
-        Uygulamada Kayıtlar (sağ üstteki simge) → "Kayıtları kopyala" düğmesine basıp çıktıyı buraya yapıştırın.
         In the app open Logs (top-right icon) → "Copy logs" and paste the result here.
+        Uygulamada Kayıtlar (sağ üstteki simge) → "Kayıtları kopyala" düğmesine basıp çıktıyı buraya yapıştırın.
       render: text
     validations:
       required: true
   - type: textarea
     id: extra
     attributes:
-      label: Eklemek istedikleriniz / Anything else
-      description: Başka bir ağda (ör. telefonun mobil erişim noktasında) durum nasıl? / Does it work on another network (e.g. phone hotspot)?
+      label: Anything else / Eklemek istedikleriniz
+      description: Does it work on another network (e.g. phone hotspot)? / Başka bir ağda (ör. telefonun mobil erişim noktasında) durum nasıl?

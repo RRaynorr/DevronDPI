@@ -1,20 +1,20 @@
-name: Öneri veya diğer / Suggestion or other
-description: Özellik önerisi, soru veya başka bir konu / Feature idea, question or anything else
+name: Suggestion or other / Öneri veya diğer
+description: Feature idea, question or anything else / Özellik önerisi, soru veya başka bir konu
 body:
   - type: markdown
     attributes:
       value: |
-        Kişisel bilgi (IP adresi, kullanıcı adı vb.) yazmayın. Bir site açılmıyorsa "Bağlantı sorunu" formunu kullanın.
         Please do not include personal information (IP, username). If a site does not open, use the "Connection problem" form.
+        Kişisel bilgi (IP adresi, kullanıcı adı vb.) yazmayın. Bir site açılmıyorsa "Connection problem / Bağlantı sorunu" formunu kullanın.
   - type: input
     id: version
     attributes:
-      label: Sürüm / Version
-      placeholder: "1.2"
+      label: Version / Sürüm
+      placeholder: "1.3"
   - type: textarea
     id: message
     attributes:
-      label: Mesajınız / Your message
-      description: Önerinizi, sorunuzu veya konuyu yazın / Describe your idea, question or topic
+      label: Your message / Mesajınız
+      description: Describe your idea, question or topic / Önerinizi, sorunuzu veya konuyu yazın
     validations:
       required: true
