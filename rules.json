@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "updatedAt": "2026-11-27",
+  "exemptDomains": [],
+  "trackerDomains": [],
+  "defaultSiteRules": [],
+  "conflictApps": [],
+  "anycastPairs": [],
+  "presetTuning": [],
+  "signature": "Az3F1kMgBCuoY9l5YIRH9CsLU8rTWMVd1qJrSQD2ayJgZWrrc8O3LhH+K1eQDuQR2LM8Pkw82pUz1b/VpF5jkpVgFhmGmuGl/loAGIypfUHt885Tgi60/qMAgf7ChAWufPFI7PPElVs8yOiVSTcxb8qEH8W7DeP48A7LDDjv36DyCSEIcWV+OB8IqU/KNW2R19FxBVDhtfyU7byM+zJfpLb/YRc2XuLCBvGz98B4Rnw60vbpoYF4vBz32FqwPw6busu5qXojY+HD1SRkVaDnIl3a9stgPMDmm8AzpTKRtxS5OQGRMaL0a+XYedl/AGdbVkCBchHTDgdjOGy0XPngAw=="
+}

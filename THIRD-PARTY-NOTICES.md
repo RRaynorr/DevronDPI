@@ -1,27 +1,6 @@
-# Üçüncü Taraf Bildirimleri / Third-Party Notices
+# Third-Party Notices / Üçüncü Taraf Bildirimleri
 
-🇹🇷 Türkçe · 🇬🇧 [English below](#english)
-
-## Türkçe
-
-DevronDPI kapalı kaynaklı ücretsiz bir yazılımdır (bkz. `LICENSE`). Uygulama aşağıdaki üçüncü taraf bileşenini kullanır:
-
-### WinDivert 2.2 — LGPLv3
-
-- **Dosyalar:** `WinDivert.dll`, `WinDivert64.sys`
-- **Telif hakkı:** © Basil (basil00 / Reqrypt), 2011–2022
-- **Lisans:** GNU Kısıtlı Genel Kamu Lisansı, sürüm 3 (LGPLv3)
-  - LGPLv3 metni: https://www.gnu.org/licenses/lgpl-3.0.txt
-  - LGPLv3'ün temel aldığı GPLv3 metni: https://www.gnu.org/licenses/gpl-3.0.txt
-  - Her iki metnin kopyası bu deponun `LICENSES` klasöründe (`LICENSES/LGPL-3.0.txt`, `LICENSES/GPL-3.0.txt`) yer alır.
-- **Kaynak kodu:** https://github.com/basil00/WinDivert (DevronDPI tarafından kullanılan sürüm v2.2.2: https://github.com/basil00/WinDivert/releases/tag/v2.2.2)
-- DevronDPI; resmî ve **değiştirilmemiş** WinDivert dosyalarını barındırır, bunları ayrı bir dinamik kütüphane (`WinDivert.dll`) ve sürücü (`WinDivert64.sys`) olarak yükler. LGPLv3 yalnızca WinDivert bileşeni için geçerlidir, DevronDPI için geçerli değildir. DevronDPI lisansı, LGPLv3 kapsamındaki haklarınızı kısıtlamaz (bkz. `LICENSE`, madde 2 ve 3).
-- `DevronDPI.exe` içindeki gömülü dosyaların SHA-256 özetleri (resmî sürümle karşılaştırabilirsiniz):
-  - `WinDivert.dll` (47.616 bayt): `c1e060ee19444a259b2162f8af0f3fe8c4428a1c6f694dce20de194ac8d7d9a2`
-  - `WinDivert64.sys` (94.144 bayt): `8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2`
-- İlk bağlantıda bu iki dosya `C:\ProgramData\DevronDPI\WinDivert-<kimlik>\` klasörüne çıkarılır ve oradan yüklenir. LGPLv3 kapsamında kendi uyumlu 64-bit `WinDivert.dll` ve `WinDivert64.sys` dosyalarınızı kullanmak isterseniz her iki dosyayı `C:\Program Files\DevronDPI\WinDivert\` klasörüne koyabilirsiniz.
-
----
+🇬🇧 English · 🇹🇷 [Türkçe aşağıda](#türkçe)
 
 ## English
 
@@ -41,3 +20,24 @@ DevronDPI is closed-source freeware (see `LICENSE`). It uses the following third
   - `WinDivert.dll` (47,616 bytes): `c1e060ee19444a259b2162f8af0f3fe8c4428a1c6f694dce20de194ac8d7d9a2`
   - `WinDivert64.sys` (94,144 bytes): `8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2`
 - On first connect DevronDPI writes these two files to `C:\ProgramData\DevronDPI\WinDivert-<id>\` and loads them from there. If you wish to use your own compatible 64-bit `WinDivert.dll` and `WinDivert64.sys` build under the LGPLv3, place both files in `C:\Program Files\DevronDPI\WinDivert\`.
+
+---
+
+## Türkçe
+
+DevronDPI kapalı kaynaklı ücretsiz bir yazılımdır (bkz. `LICENSE`). Uygulama aşağıdaki üçüncü taraf bileşenini kullanır:
+
+### WinDivert 2.2 — LGPLv3
+
+- **Dosyalar:** `WinDivert.dll`, `WinDivert64.sys`
+- **Telif hakkı:** © Basil (basil00 / Reqrypt), 2011–2022
+- **Lisans:** GNU Kısıtlı Genel Kamu Lisansı, sürüm 3 (LGPLv3)
+  - LGPLv3 metni: https://www.gnu.org/licenses/lgpl-3.0.txt
+  - LGPLv3'ün temel aldığı GPLv3 metni: https://www.gnu.org/licenses/gpl-3.0.txt
+  - Her iki metnin kopyası bu deponun `LICENSES` klasöründe (`LICENSES/LGPL-3.0.txt`, `LICENSES/GPL-3.0.txt`) yer alır.
+- **Kaynak kodu:** https://github.com/basil00/WinDivert (DevronDPI tarafından kullanılan sürüm v2.2.2: https://github.com/basil00/WinDivert/releases/tag/v2.2.2)
+- DevronDPI; resmî ve **değiştirilmemiş** WinDivert dosyalarını barındırır, bunları ayrı bir dinamik kütüphane (`WinDivert.dll`) ve sürücü (`WinDivert64.sys`) olarak yükler. LGPLv3 yalnızca WinDivert bileşeni için geçerlidir, DevronDPI için geçerli değildir. DevronDPI lisansı, LGPLv3 kapsamındaki haklarınızı kısıtlamaz (bkz. `LICENSE`, madde 2 ve 3).
+- `DevronDPI.exe` içindeki gömülü dosyaların SHA-256 özetleri (resmî sürümle karşılaştırabilirsiniz):
+  - `WinDivert.dll` (47.616 bayt): `c1e060ee19444a259b2162f8af0f3fe8c4428a1c6f694dce20de194ac8d7d9a2`
+  - `WinDivert64.sys` (94.144 bayt): `8da085332782708d8767bcace5327a6ec7283c17cfb85e40b03cd2323a90ddc2`
+- İlk bağlantıda bu iki dosya `C:\ProgramData\DevronDPI\WinDivert-<kimlik>\` klasörüne çıkarılır ve oradan yüklenir. LGPLv3 kapsamında kendi uyumlu 64-bit `WinDivert.dll` ve `WinDivert64.sys` dosyalarınızı kullanmak isterseniz her iki dosyayı `C:\Program Files\DevronDPI\WinDivert\` klasörüne koyabilirsiniz.
