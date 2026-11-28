@@ -1,6 +1,6 @@
 {
   "version": "1.4",
   "url": "https://github.com/RRaynorr/DevronDPI/releases/download/v1.4/DevronDPI.exe",
-  "sha256": "47b46cf27119f4def0441b9d5e446cb52b4c372dd52f3bdacdba3c55b0c8b52d",
+  "sha256": "6c51243dcf1b3a79eb6382fdf53d0fecc382b441aa157d525ca20177ed82d4df",
   "notes": "Added in-app Settings with sliding sub-pages and streamlined tray menu; Added Encrypted DNS (DoH) and Cloudflare DNS; Added visual per-app picker and 8-site Quick Test; Added driverless System Proxy Mode for ARM64 and non-admin PCs; Added Russian, Persian (RTL) and Spanish languages (5 total) plus rootless Android APK | Uygulama içi kayan Ayarlar ekranı ve sadeleştirilmiş bildirim alanı menüsü eklendi; Şifreli DNS (DoH) ve Cloudflare DNS eklendi; Görsel Seçili Uygulamalar ve 8 sitelik Hızlı Test eklendi; ARM64 ve yönetici izinsiz PC'ler için sürücüsüz Sistem Proxy Modu eklendi; Rusça, Farsça (RTL) ve İspanyolca (toplam 5 dil) ile root'suz Android sürümü eklendi"
 }
