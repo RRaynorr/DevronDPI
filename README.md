@@ -1,84 +1,101 @@
 # DevronDPI
 
-**One-click DPI bypass for Windows.** Reach websites, apps, online games and voice platforms restricted by your ISP's deep packet inspection (DPI) — no VPN, no speed or ping loss.
+**One-click DPI bypass for Windows & Android.** Reach websites, apps, online games and voice platforms restricted by your ISP's deep packet inspection (DPI) — no VPN, no speed or ping loss.
 
-🇬🇧 **English** &nbsp;|&nbsp; 🇹🇷 [Türkçe](README.tr.md)
+🇬🇧 **English** &nbsp;|&nbsp; 🇹🇷 [Türkçe](README.tr.md) &nbsp;·&nbsp; 💻 [Windows](#windows-devrondpiexe) &nbsp;|&nbsp; 📱 [Android](#android-devrondpiapk)
 
-[![Release](https://img.shields.io/github/v/release/RRaynorr/DevronDPI?style=for-the-badge&logo=github&label=RELEASE&color=10B981)](../../releases/latest) [![Downloads](https://img.shields.io/github/downloads/RRaynorr/DevronDPI/total?style=for-the-badge&label=DOWNLOADS&color=E11D48)](../../releases) [![VirusTotal v1.3](https://img.shields.io/badge/VirusTotal_v1.3-2%2F67-yellow?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/22a83858f4a1fcaa1af30e55f3fac2c775c0b1d24d7e880dd62afd7c677313b8)
+[![Windows](https://img.shields.io/badge/WINDOWS-10%2F11%20x64%20%26%20ARM64-0078D6?style=for-the-badge&logo=windows11&logoColor=white)](../../releases/latest) [![Android](https://img.shields.io/badge/ANDROID-10%2B%20Rootless-3DDC84?style=for-the-badge&logo=android&logoColor=black)](../../releases/latest) [![Release](https://img.shields.io/github/v/release/RRaynorr/DevronDPI?style=for-the-badge&logo=github&label=RELEASE&color=10B981)](../../releases/latest) [![Downloads](https://img.shields.io/github/downloads/RRaynorr/DevronDPI/total?style=for-the-badge&label=DOWNLOADS&color=E11D48)](../../releases) [![VirusTotal PC v1.4](https://img.shields.io/badge/VirusTotal_PC_v1.4-3%2F68-yellow?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/47b46cf27119f4def0441b9d5e446cb52b4c372dd52f3bdacdba3c55b0c8b52d) [![VirusTotal Android v1.4](https://img.shields.io/badge/VirusTotal_Android_v1.4-0%2F67-10B981?style=for-the-badge&logo=virustotal&logoColor=white)](https://www.virustotal.com/gui/file/99b91ba14c346b4d03b6f032baf1af260f3524872762f9cc15cf1e644aa369f9)
 
-**[⬇ Download the latest release](../../releases/latest)** · Nothing to install. Run `DevronDPI.exe` and press **CONNECT**.
+**[⬇ Download the latest release (Windows `.exe` & Android `.apk`)](../../releases/latest)**
 
-## What it does
+---
 
-- **Zero config.** Tests your network, finds a method that works and saves it per network (home Wi-Fi, phone hotspot…). Later connects are faster.
-- **Not a VPN.** Traffic isn't routed through anyone's server, so ping and speed stay the same.
-- **"Connected" means connected.** It only turns green after verifying a working encrypted connection with blocked test sites.
-- **4-stage Connection X-Ray & verified site rules.** Open **Diagnose connection** from the notification area menu to see live timings for `1. DNS → 2. TCP → 3. TLS SNI → 4. 24 KB Flow`. When a specific site fails, DevronDPI tests alternatives in the background and offers **Apply Working Rule** (saved per site, resettable) or **Add to Exempt List** only when proven to pass all 4 stages.
-- **Encrypted DNS (DoH) & Anycast bridge.** When well-known provider IPs like `1.1.1.1` or `9.9.9.9` are directly blocked, traffic is routed to a certificate-verified alternative Anycast IP of the same provider.
-- **Game, anti-cheat, public & custom exemptions.** Automatically passes government/university domains worldwide (`.gov`, `.edu`, `.gov.uk`, `.ac.uk`, `.gov.tr`, etc.) and sensitive gaming/anti-cheat backends (Riot/Vanguard, Steam, Battle.net, EasyAntiCheat, BattlEye, etc.) untouched — plus add your own domains (banking, corporate portals) via **Exempt sites** in the notification area menu.
-- **Discord voice.** Helps when you're stuck on "RTC Connecting".
-- **Handles network changes, sleep & lock screen.** Automatically checks and restores protection when you switch Wi-Fi, wake from sleep or unlock Windows.
-- **Tracker & ad shield (optional, 0 ms).** Turn on **Tracker & ad shield** in the notification area menu to block known advertising, tracking and telemetry domains locally — works in browsers even with DoH enabled, without decrypting HTTPS or installing certificates.
-- **Digitally signed rule updates (`rules.json`).** Optional RSA-2048 verified updates from GitHub keep exemptions, tracker lists and site rules current without needing a new release, with full offline fallback.
-- **Smooth UI with live Windows theme sync.** Fluid transitions across views, tabs, theme, language, menus and scrolling with zero idle CPU usage; automatically follows Windows Dark/Light theme changes.
-- **Portable (USB) mode & settings backup.** Export/import your settings in one click from the notification area menu, or place an empty `portable.flag` file beside `DevronDPI.exe` to keep all settings and logs in the app folder instead of `%AppData%\DevronDPI`.
+## Windows (`DevronDPI.exe`)
 
-Also: run at startup, auto-connect on launch, background mode, global hotkey, English/Turkish UI, light/dark themes, and clear startup compatibility notices on unsupported architectures (ARM64 / 32-bit). Works system-wide on Windows 10/11 x64.
+Nothing to install — run `DevronDPI.exe` and press **CONNECT**. Works on **Windows 10/11 x64** and **Windows ARM64**.
 
-## Screenshots
-
-| Connected | Logs |
+| Connected | In-App Settings |
 |:---:|:---:|
-| <img src="docs/connected-en.png" width="300" alt="Connected screen"> | <img src="docs/logs-en.png" width="300" alt="Logs screen"> |
-| **Notification area menu** | **Light theme** |
-| <img src="docs/notification-menu-en.png" width="300" alt="Notification area menu"> | <img src="docs/light-theme-en.png" width="300" alt="Light theme"> |
+| <img src="docs/connected-en.png" width="300" alt="Windows connected screen"> | <img src="docs/settings-en.png" width="300" alt="Windows in-app Settings screen"> |
+| **Logs & Live Metrics** | **Light Theme** |
+| <img src="docs/logs-en.png" width="300" alt="Windows Logs screen"> | <img src="docs/light-theme-en.png" width="300" alt="Windows Light theme"> |
 
-## Usage
+### Key features (Windows)
 
-1. Run `DevronDPI.exe`.
-2. Press **CONNECT**. Windows asks for admin rights (UAC) the first time; click **Yes**.
-
-The analysis takes a few seconds. Press the button again while it's connecting to cancel.
+- **Zero config & network memory.** Tests your network, finds a method that works and saves it per network (home Wi-Fi, hotspot…). Later connects are faster.
+- **Not a VPN.** Traffic goes straight to its destination, so ping and speed stay the same.
+- **"Connected" means connected.** Only turns green after verifying a working encrypted connection with blocked test sites.
+- **In-app Settings & streamlined tray menu.** Manage every option cleanly inside the window's **Settings** screen with sliding sub-pages, leaving a compact 5-item notification area menu.
+- **Encrypted DNS (DoH) & Preferred DNS.** Choose **Auto, Yandex, OpenDNS, AdGuard, Quad9 or Cloudflare**, and toggle **Encrypted DNS (DoH)** to tunnel system DNS over HTTPS with automatic failover and LAN/Captive Portal exemption.
+- **Anycast access bridge.** Routes directly blocked provider IPs (`1.1.1.1`, `9.9.9.9`, etc.) to a certificate-verified alternative Anycast IP of the same provider.
+- **Driverless System Proxy Mode (ARM64 & non-admin PCs).** Run locally via loopback proxy without the WinDivert driver or admin rights (auto-enabled on Windows ARM64).
+- **Visual Selected Apps picker.** Pick running apps with icons and live search under **Settings → Selected apps** to protect only chosen apps, or clear to protect the entire system.
+- **4-stage Connection X-Ray & 8-site Quick Test.** Live timings for `1. DNS → 2. TCP → 3. TLS SNI → 4. 24 KB Flow`, parallel **8-site Quick Test**, and verified **Apply Working Rule** / **Add to Exempt List** actions.
+- **Game, anti-cheat, public & custom exemptions.** Passes `.gov`, `.edu` and gaming/anti-cheat backends (`Riot/Vanguard`, `Steam`, `Battle.net`, `EasyAntiCheat`, `BattlEye`) untouched; add your own domains under **Settings → Exempt sites**.
+- **Tracker & ad shield (optional, 0 ms).** Blocks known ad, tracker and telemetry domains locally without decrypting HTTPS or installing certificates, with a live blocked counter on Home.
+- **Discord voice & automatic recovery.** Helps prevent "RTC Connecting" stalls, and automatically re-verifies protection after Wi-Fi changes, sleep or lock screen.
+- **5 languages, live theme sync & portable USB mode.** English (default), Turkish, Russian, Persian (RTL) and Spanish, live Windows Dark/Light sync, one-click settings backup/restore, `portable.flag` USB mode, and RSA-2048 signed rule updates (`rules.json`).
 
 <details>
-<summary><b>Window, notification area and logs</b></summary>
+<summary><b>Windows usage, notification area menu and admin rights</b></summary>
 
-- **X** quits the app and disconnects. Turn on **Run in background** in the top bar and X and minimize will hide the window to the notification area instead.
-- If the connection drops or comes back while the window is hidden, you get a Windows notification.
-- **Notification area icon:** left-click opens the window. The right-click menu has connect/disconnect, **Run at startup**, **Connect automatically on launch** (off by default), **Tracker & ad shield** (off by default), **Run in background**, hotkey, **Exempt sites**, **Backup / restore settings**, **Diagnose connection** (4-stage Connection X-Ray), update check and **Exit**.
-- **Logs:** features a unified tab bar (*All / Warn / Error / Details*), 3 live counters (*Protected Flows*, *Blocked Resets*, *DNS & Bridge*), instant in-card search filtering, and one-click **Copy logs** / **Save** / **Clear**.
+1. Run `DevronDPI.exe` and press **CONNECT**. Windows asks for admin rights (UAC) the first time in driver mode — click **Yes** (or turn on **System Proxy Mode** in Settings to run without admin rights).
+2. The analysis takes a few seconds; press the button again while connecting to cancel.
+3. Turn on **Run in background** to hide to the notification area on close/minimize, with live Windows drop/reconnect notifications.
+4. **Run at startup** approves UAC once and copies the exe to `C:\Program Files\DevronDPI\` with a scheduled task so you aren't prompted again. Turning it off removes both.
+
+<p align="center"><img src="docs/notification-menu-en.png" width="230" alt="Streamlined 5-item notification area menu"></p>
 
 </details>
 
-<details>
-<summary><b>Admin rights and "Run at startup"</b></summary>
+---
 
-Capturing packets with WinDivert requires admin rights. The window runs unelevated; only the packet engine runs elevated, in a separate process, so screenshot tools and hotkeys work normally. The engine stops when the window closes.
+## Android (`DevronDPI.apk`)
 
-When you turn on **Run at startup**, you approve UAC once. After that you won't be prompted at logon or when you press **CONNECT** (except possibly once on the first connect after an update). The option copies the exe to `C:\Program Files\DevronDPI\`, which only administrators can modify, and creates a scheduled task. Turning it off removes both. If you move the exe to another folder, toggle the option off and on once.
+Standalone **rootless** Material 3 app for **Android 10+** (`3.5 MB` signed APK · **0/67** on VirusTotal). Uses Android's local on-device `VpnService` — **not an external VPN**, no remote server, no speed or ping loss.
 
-</details>
+| Dark Mode (Connected) | Light Mode (Connected) |
+|:---:|:---:|
+| <img src="docs/android-connected-en.png" width="240" alt="Android Dark mode connected"> | <img src="docs/android-light-en.png" width="240" alt="Android Light mode connected"> |
+
+### Key features (Android)
+
+- **Rootless on-device DPI bypass.** Splits TLS `ClientHello` records & TCP segments locally, blocks QUIC (UDP 443) so browsers and Discord fall back to TCP TLS, and prevents dual-stack 4G/5G IPv6 DPI leaks.
+- **Per-app protection.** Choose exactly which apps go through DevronDPI with icons and search, or protect all apps.
+- **Preferred DNS & fast cache.** Pick **Auto, Yandex, OpenDNS, AdGuard, Quad9 or Cloudflare** with non-standard-port fallback and instant local response caching.
+- **Tracker & ad shield.** Toggle local 0-ms ad/tracker blocking with live protected-flow and blocked counters.
+- **4-stage Connection X-Ray & parallel 8-site test.** Tap the pulse icon in the top bar to probe any domain or run a parallel 8-site benchmark with one-click copy.
+- **Quick Settings tile & auto-start on boot.** Toggle DevronDPI directly from Android's notification shade or start automatically when your phone boots.
+- **5 languages, Dark/Light/System theme & signed rules.** English, Turkish, Russian, Persian (RTL) and Spanish, Material 3 themes, live logs viewer, and shared RSA-2048 signed `rules.json` updates.
+
+### Android installation
+
+1. Download `DevronDPI.apk` from the [latest release](../../releases/latest) on Android 10 or newer.
+2. Install the APK (allow installing unknown apps when prompted by Android).
+3. Open **DevronDPI**, tap **CONNECT**, and approve Android's local VPN dialog once. Optionally add the **DevronDPI** Quick Settings tile from your notification shade.
+
+---
 
 ## Good to know
 
 - **General IP blocks can't be bypassed.** If a site is directly blocked by IP (aside from supported Anycast providers), no DPI tool can open it; you need a VPN. DevronDPI detects this and tells you.
 - **"Connected" doesn't guarantee every site.** It means the test sites are reachable.
-- **Plain DNS isn't encrypted.** System DNS queries go unencrypted to the selected DNS server. Your browser's own DoH stays untouched — and keeps working on blocked networks thanks to the Anycast bridge.
+- **Encrypted DNS (DoH) is optional.** Turn on **Encrypted DNS (DoH)** in Windows Settings to encrypt system DNS lookups over HTTPS. When off, system DNS queries go over UDP to your selected DNS server (local/LAN names automatically bypass DoH).
 - **On company or school networks,** DNS redirection may stop internal hostnames from resolving.
 - **The QUIC block** may affect VPNs that use UDP 443.
-- DNS redirection can't be turned off from the UI. Global is the only method that skips it, and it's tried last.
+- **Android VPN slot:** Android allows only one active `VpnService` at a time, so DevronDPI cannot run simultaneously with another VPN app on Android.
 
 ## Privacy
 
-- No data collection, no telemetry. Settings and logs (`devron.conf`, `devron.log`, `devron-engine.log`, `rules.cache.json`) stay in `%AppData%\DevronDPI` on your PC.
+- No data collection, no telemetry. On Windows, settings and logs (`devron.conf`, `devron.log`, `devron-engine.log`, `rules.cache.json`) stay in `%AppData%\DevronDPI` (or beside the exe in portable mode). On Android, preferences and cached signed rules stay in private app storage.
 - Connection and diagnostic checks only verify the encrypted handshake and initial response with the tested addresses; none of your personal data is sent. As with any connection, those sites see your IP address.
-- Only two things go to third parties: **DNS queries** to the selected server (Yandex, OpenDNS, AdGuard or Quad9) and **update / signed rule checks** to GitHub. Their own privacy policies apply.
+- Only two things go to third parties: **DNS queries** to the selected provider (Yandex, OpenDNS, AdGuard, Quad9 or Cloudflare) and **update / signed rule checks** to GitHub. Their own privacy policies apply.
 
 ## Security
 
 - **Updates** come from GitHub, are never installed without your approval and are rejected if the SHA-256 hash doesn't match. See [CHANGELOG.md](CHANGELOG.md) for changes.
-- **Signed rule updates (`rules.json`)** are verified against an embedded RSA-2048 public key on both download and local cache load. Unsigned, tampered, or out-of-range bundles are rejected; no code or commands can be executed.
-- **The exe isn't code-signed yet,** so you may see a Windows SmartScreen or "Unknown publisher" warning. Only download it from the [releases](../../releases) page and compare the SHA-256 hash with the release notes.
+- **Signed rule updates (`rules.json`)** are verified against an embedded RSA-2048 public key on both Windows and Android. Unsigned, tampered, or out-of-range bundles are rejected; no code or commands can be executed.
+- **The Windows exe isn't code-signed yet,** so you may see a Windows SmartScreen or "Unknown publisher" warning. Only download it from the [releases](../../releases) page and compare the SHA-256 hash with the release notes.
 - **Antivirus warnings** such as `RiskTool.WinDivert` are false positives caused by the packet-capture driver (WinDivert). WinDivert is a Microsoft-signed driver, also used by GoodbyeDPI. Add the exe to your exclusions if needed.
 
 To report a vulnerability, see [SECURITY.md](SECURITY.md).
@@ -86,18 +103,16 @@ To report a vulnerability, see [SECURITY.md](SECURITY.md).
 <details>
 <summary><b>How it works</b></summary>
 
-DPI systems usually identify the site you're visiting from the SNI field of the TLS ClientHello. DevronDPI captures outbound packets with WinDivert and rewrites them locally before they leave:
+DPI systems usually identify the site you're visiting from the SNI field of the TLS ClientHello. DevronDPI processes outbound connection setup locally on your device before packets leave:
 
-- **SNI splitting:** the ClientHello is split into several TCP segments so the DPI never sees the hostname in one piece.
-- **Fake packets:** decoys with a low TTL, or an invalid sequence number, checksum or TCP MD5 option, confuse the DPI. The TTL is picked so the decoy reaches the DPI box but expires before the server, based on the hop distance measured from the server's SYN-ACK (Auto-TTL).
-- **DNS redirection:** UDP 53 queries go to Yandex DNS (`77.88.8.8`) on port 1253. If it doesn't answer, OpenDNS, AdGuard and Quad9 are tried, with verified TCP DNS fallback for large answers.
+- **SNI splitting:** the ClientHello is split into separate segments so the DPI never sees the hostname in one piece.
+- **Auto-TTL & smart protection:** on Windows driver mode, the hop distance measured from the server's SYN-ACK is used to tune delivery parameters automatically.
+- **DNS redirection & Encrypted DNS (DoH):** UDP 53 queries are redirected to clean non-standard-port DNS (Yandex :1253, OpenDNS :5353, AdGuard :5353) or tunneled over HTTPS when **Encrypted DNS (DoH)** is enabled on Windows.
 - **Anycast bridge:** when `1.1.1.1`, `9.9.9.9`, `208.67.222.222`, `8.8.8.8` or `94.140.14.14` is directly blocked, traffic is routed to an OS-certificate-verified alternative Anycast IP of the same provider.
 - **QUIC blocking:** outbound UDP 443 is dropped, so browsers and Discord fall back from HTTP/3 to TLS over TCP.
-- **Discord voice:** sends a harmless decoy right before the initial 74-byte UDP discovery packet to the voice server. The audio stream is left alone.
+- **Android on-device tunnel:** uses Android's local `VpnService` with `hevtunnel` (`hev-socks5-tunnel`) and an on-device DPI proxy — no external server and no root required.
 
-The analysis first tries whatever worked on this network last time, then the standard, alternative, light, fallback DNS and global methods in order, and finally different split points.
-
-On port 443 only initial handshake packets reach user mode. Downloads, video and game traffic stay in the kernel, keeping CPU usage near zero.
+On Windows driver mode port 443, only initial handshake packets reach user mode. Downloads, video and game traffic stay in the kernel, keeping CPU usage near zero.
 
 </details>
 
@@ -106,7 +121,7 @@ On port 443 only initial handshake packets reach user mode. Downloads, video and
 <details>
 <summary><b>It says "Connected" but a site won't open.</b></summary>
 
-Open **Diagnose connection** from the notification area menu and enter that site's address to run the 4-stage Connection X-Ray (`DNS → TCP → TLS SNI → 24 KB Flow`). If an alternative method or exempting the site works, DevronDPI verifies it and offers a one-click fix. Direct IP blocks require a VPN.
+Open **Settings → Diagnose connection** (or the pulse icon on Android) and enter that site's address to run the 4-stage Connection X-Ray. On Windows, if an alternative method or exempting the site works, DevronDPI verifies it and offers a one-click fix. Direct IP blocks require a VPN.
 </details>
 
 <details>
@@ -116,15 +131,15 @@ This usually clears up while DevronDPI is connected. It won't if the voice serve
 </details>
 
 <details>
-<summary><b>My browser uses DoH (encrypted DNS). Is that a problem?</b></summary>
+<summary><b>How does Encrypted DNS (DoH) work with Auto DNS?</b></summary>
 
-No. Your browser keeps using its own encrypted DNS, and if Cloudflare (`1.1.1.1`) or Quad9 (`9.9.9.9`) is blocked on your network, the Anycast bridge keeps DoH reachable too.
+When **Preferred DNS** is set to **Auto** and **Encrypted DNS (DoH)** is turned on, DevronDPI automatically picks a working DoH provider and fails over seamlessly if one is unreachable — while keeping local network and Captive Portal addresses exempt.
 </details>
 
 <details>
 <summary><b>How do I uninstall it?</b></summary>
 
-First turn off **Run at startup** in the notification area menu (removes the scheduled task and the `Program Files` copy). Then delete `DevronDPI.exe`. Optionally delete `%AppData%\DevronDPI` (settings, logs) and `C:\ProgramData\DevronDPI` (driver files).
+On Windows: first turn off **Run at startup** in Settings (removes the scheduled task and the `Program Files` copy), then delete `DevronDPI.exe`. Optionally delete `%AppData%\DevronDPI` and `C:\ProgramData\DevronDPI`. On Android: uninstall the app normally from Android Settings.
 </details>
 
 ## Reporting issues
@@ -132,7 +147,7 @@ First turn off **Run at startup** in the notification area menu (removes the sch
 Open an issue on the [Issues](../../issues) page and include:
 
 - The output of **Copy logs** on the **Logs** screen (includes version, method summary, counters and engine logs).
-- What you did and what happened, with a screenshot if you can.
+- Your platform (Windows or Android), what you did and what happened, with a screenshot if you can.
 
 Logs may contain the hostnames of tested sites, so take a quick look before posting them.
 
@@ -140,4 +155,4 @@ Logs may contain the hostnames of tested sites, so take a quick look before post
 
 Closed-source freeware, distributed under the [LICENSE](LICENSE) terms. © 2026 RRaynorr
 
-WinDivert is licensed under LGPLv3. See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for details and instructions on using your own WinDivert build.
+Windows uses WinDivert (LGPLv3) and Android uses `hevtunnel` / `hev-socks5-tunnel` (Apache-2.0 / MIT / BSD-3-Clause). See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for full details.

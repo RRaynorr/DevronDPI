@@ -1,5 +1,33 @@
 # Changelog / Değişiklik Günlüğü
 
+## 1.4 — 2026-11-28
+
+### English
+**What's new**
+- **In-app Settings with sliding sub-pages & streamlined tray menu:** Moved all preferences, Preferred DNS, Hotkey, Exempt sites, Selected apps, Backup/Restore and Connection X-Ray into a single-surface in-app **Settings** view, leaving a clean 5-item notification area menu. Added inline update checking with a `v1.4` badge and a **What's new** modal.
+- **Encrypted DNS (DoH) & Cloudflare DNS:** Added **Cloudflare (1.1.1.1)** to Preferred DNS and an optional **Encrypted DNS (DoH)** toggle (RFC 8484 direct-IP HTTPS, Keep-Alive pool, TTL cache, automatic provider failover and LAN/Captive Portal exemption).
+- **Visual Selected Apps picker & 8-site Quick Test:** Pick running apps with icons and live search under **Settings → Selected apps**, and run a parallel 4-stage **8-site Quick Test** inside Connection X-Ray with one-click copy.
+- **Driverless System Proxy Mode (Windows ARM64 & non-admin PCs):** Added an optional local loopback proxy mode requiring no WinDivert driver or administrator rights (enabled automatically on Windows ARM64).
+- **New languages (RU, FA, ES) & live blocked counter:** Added **Russian (RU)**, **Persian (FA, RTL)** and **Spanish (ES)** alongside existing English and Turkish (5 languages total, English default), live blocked-trackers counter on Home, and status-badged taskbar/tray icons.
+- **Standalone Android release (`DevronDPI.apk`, rootless Android 10+):** Shipped a signed Material 3 Android app with local on-device `VpnService` + DPI proxy, IPv6 `AAAA` leak prevention on 4G/5G, visual per-app picker, cached Preferred DNS, Tracker & ad shield, parallel 4-stage X-Ray & 8-site benchmark, Quick Settings tile, auto-start on boot, 5 languages, Dark/Light themes and shared RSA-2048 signed rules.
+
+**Fixes**
+- Fixed Windows 11 double drop-shadow halo, Light/Dark theme transition frame skips and card edge bleed, warning banner clipping over the power orb, and live settings hot-reload without false drop notifications or timer resets.
+- Fixed Android 14/15 foreground service startup edge cases, fragmented TLS ClientHello reassembly, socket relay half-close handling, Turkish-locale hostname normalization, and log viewer clear/copy behavior.
+
+### Türkçe
+**Yenilikler**
+- **Uygulama içi Ayarlar, kayan alt sayfalar ve sadeleştirilmiş bildirim alanı menüsü:** Tüm ayarlar, Tercih Edilen DNS, Kısayol, Muafiyet Listesi, Seçili Uygulamalar, Yedekleme ve Bağlantı Röntgeni tek yüzeyli **Ayarlar** ekranına taşındı; bildirim alanı menüsü 5 satırla sadeleştirildi. Satır içi güncelleme kontrolü (`v1.4` rozetli) ve **Yenilikler** penceresi eklendi.
+- **Şifreli DNS (DoH) ve Cloudflare DNS:** Tercih Edilen DNS listesine **Cloudflare (1.1.1.1)** ve isteğe bağlı **Şifreli DNS (DoH)** anahtarı eklendi (doğrudan IP üzerinden RFC 8484 HTTPS, Keep-Alive havuzu, TTL önbelleği, otomatik sağlayıcı yedeklemesi ve yerel ağ/Captive Portal muafiyeti).
+- **Görsel Seçili Uygulamalar ve 8 sitelik Hızlı Test:** **Ayarlar → Seçili uygulamalar** ekranında açık uygulamaları simgeleri ve anlık aramayla seçebilir, Bağlantı Röntgeni içinde paralel 4 aşamalı **8 sitelik Hızlı Test** çalıştırıp raporu tek tıkla kopyalayabilirsiniz.
+- **Sürücüsüz Sistem Proxy Modu (Windows ARM64 ve yönetici izinsiz PC'ler):** WinDivert sürücüsü ve yönetici izni gerektirmeyen isteğe bağlı Sistem Proxy Modu eklendi (Windows ARM64 cihazlarda otomatik etkinleşir).
+- **Yeni diller (RU, FA, ES) ve canlı sayaç:** Mevcut İngilizce ve Türkçenin yanına **Rusça (RU)**, **Farsça (FA, RTL)** ve **İspanyolca (ES)** eklendi (toplam 5 dil, varsayılan İngilizce); ana ekrana canlı engellenen izleyici sayacı ve görev çubuğu/bildirim alanına durum rozetli simgeler eklendi.
+- **Bağımsız Android sürümü (`DevronDPI.apk`, root'suz Android 10+):** Cihaz içi yerel `VpnService` + DPI proxy, 4G/5G IPv6 `AAAA` sızıntı engeli, görsel uygulama seçici, önbellekli Tercih Edilen DNS, İzleyici & reklam koruması, paralel 4 aşamalı Röntgen ve 8 sitelik toplu test, Hızlı Ayarlar kutucuğu, açılışta başlatma, 5 dil, Koyu/Açık Material 3 tema ve ortak RSA-2048 imzalı kurallarla imzalı Android sürümü yayınlandı.
+
+**Düzeltmeler**
+- Windows 11 çift gölge kenarlığı, Koyu/Açık tema geçişindeki kare atlaması ve kart kenarı taşması, uyarı şeridinin bağlantı düğmesini örtmesi ve ayar değiştirirken yanlış kopma bildirimi/sayaç sıfırlanması giderildi.
+- Android 14/15 ön plan servisi başlangıç kenar durumları, parçalı TLS ClientHello birleştirme, soket yarım kapatma, Türkçe dil ayarında büyük `I` alan adı bozulması ve kayıt temizleme/kopyalama sorunları düzeltildi.
+
 ## 1.3 — 2026-11-27
 
 ### English
